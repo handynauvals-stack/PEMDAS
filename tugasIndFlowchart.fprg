@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tugasIndFlowchart"/>
+        <attribute name="authors" value="Pongo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-10 08:05:12 AM"/>
+        <attribute name="created" value="UG9uZ287TUlTS0lOTEFQVE9QOzIwMjUtMDktMTA7MDc6NDU6MjMgQU07MjcwNw=="/>
+        <attribute name="edited" value="UG9uZ287TUlTS0lOTEFQVE9QOzIwMjUtMDktMTA7MDg6MDU6MTIgQU07MTsyODEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="massa, kecepatan, ketinggian, energiPotensial, energiKinetik, energiMekanik, gravitasi" type="Integer" array="False" size=""/>
+            <assign variable="gravitasi" expression="10"/>
+            <output expression="&quot;Masukkan massa :&quot;" newline="True"/>
+            <input variable="massa"/>
+            <output expression="&quot;Masukkan kecepatan :&quot;" newline="True"/>
+            <input variable="kecepatan"/>
+            <output expression="&quot;Masukkan ketinggian :&quot;" newline="True"/>
+            <input variable="ketinggian"/>
+            <assign variable="energiPotensial" expression="massa*gravitasi*ketinggian"/>
+            <assign variable="energiKinetik" expression="0.5*massa*(kecepatan*kecepatan)"/>
+            <assign variable="energiMekanik" expression="energiKinetik+energiPotensial"/>
+            <output expression="&quot;Energi Potensial: &quot;" newline="False"/>
+            <output expression="energiPotensial" newline="True"/>
+            <output expression="&quot;Energi Kinetik : &quot;" newline="False"/>
+            <output expression="energiKinetik" newline="True"/>
+            <output expression="&quot;Energi Mekanik: &quot;" newline="False"/>
+            <output expression="energiMekanik" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>
