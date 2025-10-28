@@ -4,8 +4,9 @@ import java.lang.Math;
 public class tugas28okt {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        boolean lanjut = true;
 
-        while (true) {
+        while (lanjut) {
             System.out.println("\n\nPilih opsi menghitung luas:\n1. Persegi\n2. Persegi panjang\n3. Segitiga\n4. Lingkaran\n");
             int pilihan = input.nextInt();
             switch (pilihan) {
@@ -37,6 +38,11 @@ public class tugas28okt {
                     break;
                 }
             }
+
+            System.out.println("\n\nApakah anda ingin lanjut: \n1. YA\n2. TIDAK\n");
+            pilihan = input.nextInt();
+            if (pilihan == 1) lanjut = true;
+            else lanjut = false;
         }
         
     }
@@ -65,5 +71,6 @@ public class tugas28okt {
         double hasil = (a*t) / 2;
         System.out.printf("\nhasil: %.2f", hasil);
     }
+
 
 } 
